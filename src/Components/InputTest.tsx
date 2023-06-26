@@ -1,4 +1,4 @@
-import { Card, Checkbox, Form, Input } from "antd";
+import { Card, Form, Input } from "antd";
 import { InputTest as InputTestType } from "../types/types";
 
 

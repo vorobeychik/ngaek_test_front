@@ -1,6 +1,6 @@
 import { Card, Button, Form, Input } from 'antd';
 import { store } from '../store/store';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
 
 interface LoginForm {

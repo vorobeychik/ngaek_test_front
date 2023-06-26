@@ -38,7 +38,7 @@ export const TestConstructor = observer(() => {
             const form = forms[formName];
             const formData = form.getFieldsValue();
             console.log(formData);
-            const [type, id] = formName.split(' ');
+            const [type ] = formName.split(' ');
 
             switch (type) {
                 case TestTypes.InputTest:
@@ -72,7 +72,7 @@ export const TestConstructor = observer(() => {
             }
 
         }
-        const test = await TestApi.saveTest({ name: store.userName, ...data });
+        await TestApi.saveTest({ name: store.userName, ...data });
         navigate('/tests')
 
     }

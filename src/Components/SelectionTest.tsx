@@ -6,7 +6,7 @@ interface Props {
     test: SelectionTestType,
 }
 
-const getNumberOptions = (amount: number) => [... new Array(amount)].map((number, index) => ({ label: index + 1, value: index + 1 }))
+const getNumberOptions = (amount: number) => [...new Array(amount)].map((number, index) => ({ label: index + 1, value: index + 1 }))
 
 export const SelectionTest = ({ test }: Props) => {
     const [form] = Form.useForm();

@@ -1,7 +1,6 @@
 import { Card, Button, Form, Input } from 'antd';
 import { store } from '../store/store';
 import { Link } from 'react-router-dom';
-import image from '../static/as.png'
 
 interface RegistrationForm {
     password: string;

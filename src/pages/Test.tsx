@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { TestApi } from "../api/TestApi";
 import { Button, Card, Form, Input, Progress, Select, Switch, Typography } from "antd";
-import { useForm } from "antd/es/form/Form";
-import FormItem from "antd/es/form/FormItem";
 import { observer } from "mobx-react-lite";
 import { store } from "../store/store";
 const { Title } = Typography;
@@ -29,7 +27,7 @@ export const Test = observer(() => {
            
             console.log(test);
         })()
-    }, [])
+    }, [id])
 
     const onTestComplete = (name: any, { values, forms }: any) => {
         let correctAnswers = 0;

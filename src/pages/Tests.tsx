@@ -1,16 +1,8 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 import { Spin, Typography } from 'antd';
 import { Content } from "antd/es/layout/layout";
 import { TestApi } from "../api/TestApi";
 const { Title, Link } = Typography;
-
-const routesNames = {
-    'teory': 'Теоретический раздел',
-    'practica': 'Практический раздел',
-    'tests': 'Тесты',
-    'vspomogatilnii': 'Вспомогательный раздел',
-}
 
 
 
